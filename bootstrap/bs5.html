@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Bootstrap Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-group i {
+            margin-right: 10px;
+        }
+
+        .invalid-feedback {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="firstName" placeholder="First Name">
+                    <div class="invalid-feedback">Please supply your first name</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="lastName" placeholder="Last Name">
+                    <div class="invalid-feedback">Please supply your last name</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control is-invalid" id="email" placeholder="E-Mail Address">
+                    <div class="invalid-feedback">Please supply your email address</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone #</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="phone" placeholder="(845)555-1212">
+                    <div class="invalid-feedback">Please supply your phone number</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-home"></i></span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="address" placeholder="Address">
+                    <div class="invalid-feedback">Please supply your street address</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-home"></i></span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="city" placeholder="City">
+                    <div class="invalid-feedback">Please supply your city</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select class="form-control" id="state">
+                    <option>Please select your state</option>
+                    <option>State 1</option>
+                    <option>State 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Do you have hosting?</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes">
+                        <label class="form-check-label" for="hostingYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no">
+                        <label class="form-check-label" for="hostingNo">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="projectDescription">Project Description</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-pencil-alt"></i></span>
+                    </div>
+                    <textarea class="form-control" id="projectDescription" placeholder="Project Description"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning">Send <i class="fa fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>
